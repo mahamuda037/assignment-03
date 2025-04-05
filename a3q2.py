@@ -1,6 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.integrate import odeint,solve_ivp
+from scipy.integrate import solve_ivp
+import pandas as pd
 def lotka_volterra(t,z):
     x,y=z
     dx_dt=-0.1*x+0.02*x*y
